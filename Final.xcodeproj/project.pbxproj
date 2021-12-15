@@ -304,6 +304,8 @@
 				DEVELOPMENT_TEAM = A74DU3DH52;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Final/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Recycle;
+				INFOPLIST_KEY_NSCameraUsageDescription = "For app function - image detection ";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -333,6 +335,8 @@
 				DEVELOPMENT_TEAM = A74DU3DH52;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Final/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Recycle;
+				INFOPLIST_KEY_NSCameraUsageDescription = "For app function - image detection ";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
