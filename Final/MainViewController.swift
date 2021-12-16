@@ -92,7 +92,7 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
                         //Request the Result
                         let request = VNCoreMLRequest(model: model, completionHandler: { (request,error) in
                             
-                            //Results -> (0.8,0.7,0.3) -> 0.8: Hotdog
+                            //Results 
                             guard let results = request.results as? [VNClassificationObservation],let topResult = results.first else{return}
                             
                             if topResult.identifier.contains("cardboard"){
@@ -120,11 +120,6 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
                             else if topResult.identifier.contains("plastic"){
                                 DispatchQueue.main.async {
                                     self.navigationItem.title = "Plastic"
-                                }
-                            }
-                            else if topResult.identifier.contains("trash"){
-                                DispatchQueue.main.async {
-                                    self.navigationItem.title = "Trash"
                                 }
                             }
                             else {
