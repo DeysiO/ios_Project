@@ -87,7 +87,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
                         //Request the Result
                         let request = VNCoreMLRequest(model: model, completionHandler: { (request,error) in
                             
-                            //Results -> (0.8,0.7,0.3) -> 0.8: Hotdog
+                            //Results 
                             guard let results = request.results as? [VNClassificationObservation],let topResult = results.first else{return}
                             
                             if topResult.identifier.contains("cardboard"){
